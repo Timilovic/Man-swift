@@ -3,54 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- bootstap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-    <!-- iconify link -->
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="Css/Style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="div"></div>
-        <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Service.html">Services</a></li>
-            <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
+    <div class="background">
+        <nav>
+            <div class="div"></div>
+            <ul class="list" id="Navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
 
-        <a href="">
-            Reach Out To Us
-            <iconify-icon icon="guidance:left-arrow"></iconify-icon>
-        </a>
-        <i class="bi bi-list"></i>
-    </nav>
+            <a href="">
+                Reach Out To Us
+                <iconify-icon icon="guidance:left-arrow"></iconify-icon>
+            </a>
+            <i class="bi bi-list"></i>
+        </nav>
+        
+        <div class="overlay">
+            <div class="nav">
+                <h1>YOUR HOME & <br> OFFICE REPAIR<br> HERO IN LAGOS</h1>
+                <span><a href="" class="ser">Our Services <img src="Images/arrow-white.svg" alt=""></a></span>
+                <span><a href="" class="con">Contact Now</a></span>
+                <ul>
+                    <li>Professional services guaranted</li>
+                    <li>reliable repairs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="imag">
+            <div class="logo">
+                <img src="Images/swifticon2.png" alt="">
+            </div>
+            <div class="logo">
+                <img src="Images/swifticon3.png" alt="">
+            </div>
+            <div class="figure">
+
+            </div>
+            <div class="logo">
+                <img src="Images/swifticon4.png" alt="">
+            </div>
+            <div class="logo">
+                <img src="Images/swifticon1.png" alt="">
+            </div>
+        </div>
+        <div class="bout">
+            <div class="mat">
+                <div class="matters">
+                    <h5>ABOUT US</h5>
+                    <h1>WE'RE AT YOUR <br> DOORSTEP IN NO TIME</h1>
+                    <p>At Swiftfix, we believe that no repair is too small to deserve speed, <br> professionalism, and care. Swiftfix was created to restore trust <br> and efficiency in home and office repair services across Lagos.</p>
+                </div>
+                <div class="matt">
+                    <h3>Our mission is deliver reliable, same-day repair services <br>with quality workmanship and zero excuses.</h3>
+                    <p>We are your go-to solution for everyday problems—from leaky <br>taps to power outages, faulty appliances to painting projects.</p>
+                </div>
+                <div class="mate">
+                    <h3>Our team is made up of vetted, skilled technicians</h3>
+                    <p>Who show up on time, do the job right, and treat your space with <br> respect. Whether you're managing a busy office, settling into a <br> new apartment, or handling emergency home issues, Swiftfix is <br> your dependable partner</p>
+                    <span><a href="" class="red">More About <img src="Images/arrow-white.svg" alt=""></a></span>
+                </div>
+            </div>
+            <div class="ours">
+                <div class="our">
+                    <img src="Images/swift3.jpg" alt="">
+                </div>
+                <div class="ou">
+                    <img src="Images/Swift2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+    </div>
+
+
+
+
+
+
+
+
+
 
 
     <script>
-        const Dropbtn = document.querySelector('.bi');
-        const Mylist = document.querySelector('.list');
+        document.addEventListener('DOMContentLoaded', () => {
+    
+            const Dropbtn = document.querySelector('nav>i');
+            const Mylist = document.querySelector('nav ul');
+    
+            Dropbtn.addEventListener('click', ()=>{
+                alert('click is working');
+        });
 
-        Dropbtn.addEventListener('click', ()=>{
-            if(Dropbtn.classList.contains('bi-list')){
-                Mylist.style.transform = "scaleY(1)";
-                Dropbtn.classList.replace('bi-list', 'bi-x')
-            }else{
-                Mylist.style.transform = "scaleY(0)";
-                Dropbtn.classList.replace('bi-x', 'bi-list');
-            }
+
         })
+
+        // Dropbtn.addEventListener('click', ()=>{
+
+        //     alert('it is working');
+        //     if(Dropbtn.classList.contains('bi-list')){
+        //         Mylist.style.transform = "scaleY(1)";
+        //         Dropbtn.classList.replace('bi-list', 'bi-x')
+        //     }else{
+        //         Mylist.style.transform = "scaleY(0)";
+        //         Dropbtn.classList.replace('bi-x', 'bi-list');
+        //     }
+        // })
     </script>
+
 </body>
 </html>
