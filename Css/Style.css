@@ -257,7 +257,7 @@ nav>i{
     position: relative;
 }
 .bout .ou img {
-    margin-top: -570px;
+    margin-top: -530px;
     margin-left: -50px;
     border: 10px solid white;
     border-radius: 25px;
@@ -266,6 +266,9 @@ nav>i{
     width: 11%;
     height: 25vh;
     object-fit: cover;
+}
+.bout .ours {
+    border: 1px solid red;
 }
 .skill {
     bottom: 0px;
