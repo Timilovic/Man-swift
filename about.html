@@ -6,20 +6,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/slicknav.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/swiftlogo.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/about.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Swifty Handyman</title>
 </head>
 <body>
     <div class="background">
+
+        <!-- Top nav section -->
+    <nav>
+        <div class="div"></div>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+
+        <a href="">
+            Reach Out To Us
+            <iconify-icon icon="guidance:left-arrow"></iconify-icon>
+        </a>
+        <i class="bi bi-list"></i>
+    </nav>
+    <!-- top nav section ends here -->
+
+
         <div class="container">
             <div class="row">
                 <h1>About Us</h1>
-                <h5><a href="" >Home</a>/ About Us</h5>
+                <h5><a href="index.html" >Home</a>/ About Us</h5>
             </div>
         </div>
     </div>
@@ -37,6 +58,7 @@
                     <div class="list">
                         <div class="t">
                             <h3>
+                                <input type="checkbox">
                                 Our mission is deliver reliable, same-day repair services <br> with quality workmanship and zero excuses.
                             </h3>
                             <p>We are your go-to solution for everyday problems—from leaky <br> taps to power outages, faulty appliances to painting projects.</p>
@@ -99,9 +121,9 @@
                     <div class="tab">
                         <div class="nav">
                             <ul>
-                                <li><a href="">Our Mission</a></li>
-                                <li><a href="">Our Vision</a></li>
-                                <li><a href="">Our Team</a></li>
+                                <li><a href="" style="background-color: #382e5b; color: #fff;">Our Mission</a></li>
+                                <li><a href="" id="j">Our Vision</a></li>
+                                <li><a href="" id="j">Our Team</a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,5 +131,28 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        const Dropbtn = document.querySelector('.bi');
+        const Mylist = document.querySelector('.list');
+
+        Dropbtn.addEventListener('click', ()=>{
+            if(Dropbtn.classList.contains('bi-list')){
+                Mylist.style.transform = "scaleY(1)";
+                Dropbtn.classList.replace('bi-list', 'bi-x')
+            }else{
+                Mylist.style.transform = "scaleY(0)";
+                Dropbtn.classList.replace('bi-x', 'bi-list');
+            }
+        })
+    </script>
 </body>
 </html>
