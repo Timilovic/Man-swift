@@ -13,7 +13,7 @@ a {
     padding: 0px 15px ;
 }
 .background {
-    background-image: url(images/swiftfix2.jpg);
+    background-image: url(../Images/swift1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
