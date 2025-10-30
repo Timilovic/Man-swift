@@ -4,6 +4,120 @@
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
+
+/* top nav style */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--accent-font);
+}
+nav{
+    display: flex;
+    padding: 29px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10em;
+}
+nav>div:first-child{
+    width: 70px;
+    padding: 9px 0;
+    border: 1px solid red;
+    background-color: black;
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    font-family: var(--accent-font);
+    align-items: center;
+    margin: 0;
+}
+nav a{
+    color:white ;
+    text-decoration: none;
+}
+nav>a{
+    /* background-color: #323858 ; */
+    background-color: #383e5b;
+    padding: 16px 20px;
+    border-radius: .4em;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 7;
+    overflow: hidden;
+}
+nav>a::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    transition: width 0.4s ease, height 0.5s ease ;
+    transform-origin: right bottom;
+}
+nav>a:hover::before{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+}
+nav>a iconify-icon{
+    margin-left: 10px;
+    color: white;
+    font-size: 19px;
+    stroke-width: 2.5;
+}
+nav>i{
+    display: none;
+}
+@media screen and (max-width:956px) {
+    nav{
+        justify-content: space-between;
+        padding: 29px 3.3em;
+        position: relative;
+    }
+    nav>ul{
+        /* display: none; */
+        transform: scaleY(0);
+        transform-origin: top;
+        transition:.3s ease;
+        position: absolute;
+        background-color: #383e5b;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 12px;
+        row-gap: 1em;
+    }
+    nav>a{
+        display: none;
+    }
+    nav>i{
+        display: flex;
+        font-size: 34px;
+        background-color: #383e5b;
+        padding: 1px 6px;
+        max-height: 40px;
+        border-radius: .2em;
+        color: white;
+    }
+}
+
+/* top nav ends here */
 a {
     text-decoration: none;
     color: #fff;
@@ -13,7 +127,7 @@ a {
     padding: 0px 15px ;
 }
 .background {
-    background-image: url(../Images/swift1.jpg);
+    background-image: url(../Images/swiftfix2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,7 +135,6 @@ a {
     text-align: center;
     position: relative;
     width: 100%;
-    padding: 245px 0 190px;
 } 
 .background::before {
     content: '';
@@ -35,6 +148,9 @@ a {
     height: 100%;
     z-index: 0;
 }   
+.background .row {
+    padding-bottom: 190px;
+}
 .background h1 {
     font-family: "Jost", sans-serif;
     font-weight: 500;
@@ -130,7 +246,7 @@ a {
     color: #2c2c2c;
     line-height: 1.2em;
 }
-.about .row .content .list .t h3::before {
+.about .row .content .list .t h3 input{
     content: '\f058';
     position: absolute;
     font-family: 'Font Awesome 6 Free';
@@ -479,13 +595,11 @@ a {
     width: calc(33.33%);
 }
 .approach .row .content .nav  ul li a {
-    color: #fff;
-    background-color: #382e5b;
-    padding: 17px 20px;
+    color: #707070;
+    background-color: #fff;
     cursor: pointer;
     position: relative;
     display: inline-block;
-    background: #382e5b;
     font-size: 18px;
     font-weight: 600;
     line-height: 1em;
@@ -493,5 +607,23 @@ a {
     transition: all 0.5s ease-in-out;
     overflow: hidden;
     z-index: 0;
-    padding: 17px 20px;
+    width: 100%;
+    padding: 17px 40px;
+}
+.approach .row .content .nav  ul li #j::before:hover {
+    width: 100%;
+    right: 0;
+}
+.approach .row .content .nav  ul li #j::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #382e5b;
+    transform: translateX(-25px);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
 }
