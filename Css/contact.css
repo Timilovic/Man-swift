@@ -2,11 +2,42 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--accent-font);
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 body{
-    background-color: red;
+    background-color: white;
 }
+
+header{
+    min-height: 100vh;
+    background: url(../Images/contact-top.jpg) no-repeat center/cover;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+header>h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 150px;
+}
+header>span a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(22, 22, 22, 0.568); */
+    box-shadow: inset 0px 0px 30px 100px rgba(37, 37, 37, 0.637);
+    z-index: -1;
+}
+
 nav{
     display: flex;
     padding: 29px 0;
@@ -28,9 +59,13 @@ nav>ul{
     align-items: center;
     margin: 0;
 }
+nav>ul a:hover{
+    color: #383e5b;
+}
 nav a{
     color:white ;
     text-decoration: none;
+    transition: .3s ease;
 }
 nav>a{
     /* background-color: #323858 ; */
@@ -74,6 +109,9 @@ nav>a iconify-icon{
 nav>i{
     display: none;
 }
+
+
+
 @media screen and (max-width:956px) {
     nav{
         justify-content: space-between;
