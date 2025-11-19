@@ -7,4 +7,4 @@
 -     font-family: "Jost", sans-serif;
 
 #small text font family 
--  font-family: Montserrat, sans-serif;
+-  font-family: "Montserrat", sans-serif;
