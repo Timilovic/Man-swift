@@ -974,3 +974,387 @@ a {
     object-fit: contain;
     max-width: 100%;
 }
+.choose {
+    padding: 180px 0 0 0;
+}
+.choose .choose-box {
+    background-color: #f9f9f9;
+    padding: 100px 0 150px;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+}
+.section-row {
+    position: relative;
+    margin-bottom: 80px;
+    z-index: 1;
+    align-items: flex-end !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tittle {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+.choose .choose-box .section-row .tittle h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+.choose .choose-box .section-row .tittle  h3 img {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+.choose .choose-box .section-row .tittle h2 {
+    perspective: 400px;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    cursor: none;
+    font-family: "Jost", sans-serif;
+    color: #2c2c2c;
+}
+.choose .choose-box .section-row .choose-image {
+    margin-top: -180px;
+}
+.choose .choose-box .section-row .choose-image figure {
+    display: block;
+    border-radius: 20px;
+}
+.choose .choose-box .section-row .choose-image .image-anime {
+    position: relative;
+    overflow: hidden;
+}
+.choose .choose-box .section-row .choose-image .image-anime:hover::after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+.choose .choose-box .section-row .choose-image .image-anime::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+    box-sizing: border-box;
+}
+.choose .choose-box .section-row .choose-image img {
+    width: 100%;
+    aspect-ratio: 1 / 0.581;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.choose .choose-box .row .project-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.choose .choose-box .row .project-item {
+    width: calc(25% - 22.5px);
+}
+.choose .choose-box .row .project-item .icon {
+    margin-bottom: 20px;
+}
+.choose .choose-box .row .project-item .icon img {
+    max-width: 40px;
+}
+.choose .choose-box .row .project-item .content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    color: #2c2c2c;
+    font-family: "Jost", sans-serif;
+    line-height: 1.2em;
+}
+.choose .choose-box .row .project-item .content p {
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #707070;
+}
+.choose .choose-box .row .choose-foot {
+    margin-top: 60px;
+    padding-top: 60px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #eeeeee;
+}
+.choose .choose-box .row .choose-foot p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    color: #707070;
+    font-family: "Montserrat", sans-serif;
+}
+.choose .choose-box .row .choose-foot p a {
+    font-weight: 600;
+    color: #382e5b;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+.work {
+    padding: 100px 0 150px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+}
+.work .section-row {
+    align-items: center !important;
+}
+.work .section-row .tittle h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+.work .section-row .tittle h3 img {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;    
+}
+.work .section-row .tittle h2 {
+    perspective: 400px;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    cursor: none;
+    font-family: "Jost", sans-serif;
+    color: #2c2c2c;
+}
+.work .section-row .c-content {
+    display: flex;
+    justify-content: flex-end;
+}
+.work .section-row .c-content .c-box {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    border-radius: 100px;
+}
+.work .section-row .c-content .c-box .c-images {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-right: 1px solid #eeeeee;
+}
+.c-image {
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-left: -20px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 1;
+}
+.c-image figure {
+    display: block;
+    margin: 0;
+}
+.c-image .image-anime {
+    position: relative;
+    overflow: hidden;
+}
+.c-image .image-anime:hover::after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+.c-image .image-anime::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.c-image img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.c-images .xt {
+    width: 60px;
+    height: 60px;
+    background-color: #382e5b;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-images .xt h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2em;
+    font-family: "Jost", sans-serif;
+}
+.c-tittle {
+    padding: 18px 15px;
+    width: 100%;
+    max-width: 180px;
+}
+.c-tittle h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    font-family: "Jost", sans-serif;
+    color: #2c2c2c;
+}
+.work .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center !important;
+}
+.work .row .work-image {
+    display: flex;
+    align-items: center;
+}
+.work .row .work-image-tittle {
+    margin-right: 30px;
+}
+.work .row .work-image-tittle h2 {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #eeeeee;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    cursor: none;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.2em;
+    font-family: "Jost", sans-serif;
+}
+.work-image:hover .work-image-tittle h2 {
+    color: #382e5b;
+    opacity: 60%;
+}
+.work .row .work-image figure {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.work .row .work-image .image-anime {
+    position: relative;
+}
+.work .row .work-image .image-anime:hover::after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+.work .row .work-image .image-anime::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.work .row .work-image img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1.37;
+    border-radius: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.step {
+    margin-left: 30px;
+}
+.step .item {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.step .item .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.item:hover .icon::before {
+    scale: (1);
+}
+.item .icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #382e5b;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+.step .item .icon img {
+    position: relative;
+    max-width: 50px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.item:hover .icon img  {
+    filter: brightness(0) invert(1);
+}
+
