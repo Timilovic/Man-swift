@@ -966,8 +966,10 @@ a {
     font-weight: 400;
 }
 .fact .rowd .fact-image {
-    max-width: 500px;
-    margin: 0 52px;
+    width: 100%;
+    height: 50vh;
+    vertical-align: middle;
+    z-index: 1;
 }
 .fact .rowd .fact-image img {
     width: 100%;
@@ -1175,11 +1177,11 @@ a {
     border: 1px solid #eeeeee;
     border-radius: 100px;
 }
-.work .section-row .c-content .c-box .c-images {
+.work .section-row .c-content .c-images {
     position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 20px 15px;
+    padding: 18px 35px;
     border-right: 1px solid #eeeeee;
 }
 .c-image {
@@ -1331,10 +1333,10 @@ a {
     border-radius: 10px;
     margin-right: 20px;
 }
-.item:hover .icon::before {
+.step .item .icon::before {
     scale: (1);
 }
-.item .icon::before {
+.step .item:hover .icon:hover::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1357,4 +1359,26 @@ a {
 .item:hover .icon img  {
     filter: brightness(0) invert(1);
 }
-
+.step .content {
+    width: calc(100% - 100px);
+}
+.step .content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    line-height: 1.2em;
+    color: #2c2c2c;
+}
+.step .content h3 span {
+    color: #382e5b;
+}
+.step .content p {
+    color: #707070;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: 400;
+}
