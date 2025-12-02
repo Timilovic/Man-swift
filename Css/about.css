@@ -1382,3 +1382,97 @@ a {
     font-size: 18px;
     font-weight: 400;
 }
+.scrolling-ticker-box {
+    gap: 50px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    margin: 0 0 50px 0;
+}
+.scrolling-content {
+    flex-shrink: 0;
+    display: flex;
+    gap: 50px;
+    min-width: 100%;
+    animation: scroll 50s linear infinite;
+    scroll-behavior: smooth;
+    transform: translateX(calc(-28.855% - 14.4275px));;
+}
+.scrolling-content span {
+    align-items: center;
+    text-transform: capitalize;
+    font-family: "Jost", sans-serif;
+    font-size: 100px;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: transparent;
+    letter-spacing: 0.02em;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #382e5b;
+    stroke: #382e5b;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.scrolling-content span img {
+    width: 100%;
+    max-width: 55px;
+    margin-right: 40px;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.testimonial {
+    padding-top: 170px;
+}
+.testimonial .container {
+    margin-right: 53px;
+    margin-left: 53px;
+}
+.testimonial .t-box {
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0 150px;
+    background: url(), #382e5b;
+    margin-top: -50px;
+}
+.testimonial .t-box .row {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+.testimonial .t-box .row .t-image{
+    margin-right: 30px;
+    margin-top: -170px
+}
+.testimonial .t-box .row .t-image figure {
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.testimonial .t-box .row .t-image .image-anime {
+    position: relative;
+}
+.testimonial .t-box .row .t-image .image-anime::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.testimonial .t-box .row .t-image .image-anime img {
+    width: 100%;
+    aspect-ratio: 1 / 0.915;
+    object-fit: cover;
+    border-radius: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
