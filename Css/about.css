@@ -94,7 +94,7 @@ nav>i{
         transform-origin: top;
         transition:.3s ease;
         position: absolute;
-        background-color: #383e5b;
+        background-color: #382e5b;
         top: 100%;
         left: 0;
         right: 0;
@@ -110,7 +110,7 @@ nav>i{
     nav>i{
         display: flex;
         font-size: 34px;
-        background-color: #383e5b;
+        background-color: #382e5b;
         padding: 1px 6px;
         max-height: 40px;
         border-radius: .2em;
